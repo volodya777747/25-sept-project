@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3B3B3B;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+main {
+    margin: 100px 0;
+}
+
+.main-title {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.sub-title {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 16px;
+    margin: 30px auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-content {
+    flex: 1;
+    max-width: 40%;
+    text-align: left; 
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.right-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -50px;
+}
+
+.right-content img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #1E1E1E;
+}
+
+.container2 {
+    display: flex;
+    align-items: center; 
+    padding: 50px;
+}
+
+.right-section {
+    text-align: left; 
+    max-width: 500px;
+    margin-left: 20px; 
+}
+
+.container2_img {
+    width: 785px; 
+    height: 647px;
+    margin-left: -50px;
+}
+
+.container2_title {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.container2_subtitle {
+    margin-top: 10px;
+    line-height: 1.6; 
+}
+
+.catalog-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.left-content3 {
+    max-width: 500px;
+}
+
+.left-content3 h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.left-content3 p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.catalog-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff7a00;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.catalog-button:hover {
+    background-color: #e66a00;
+}
+
+.right-content3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog-image {
+    width: 400px; 
+    height: auto;
+    border: 2px solid #3B3B3B;
+    width: 828px;
+    height: 580px;
+    margin-right: -50px;
+}
+
+
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #5B5B5B;
+}
+
+.header .logo h1, .footer .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.menu a, .footer-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.contact-info, .footer-contact {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-info a, .footer-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.collection {
+    padding: 50px 0;
+}
+
+.collection h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.reviews {
+    padding: 50px 0;
+}
+
+.reviews h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.reviews-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.review {
+    background-color: #585858;
+    padding: 20px;
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.review p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}

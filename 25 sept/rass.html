@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подписка на рассылку</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="subscription-container">
+        <h2>ПОДПИСКА НА РАССЫЛКУ</h2>
+        <p>ПОЛУЧАЙТЕ СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ И НОВОСТИ ОТ НАС ПЕРВЫМИ!</p>
+        <form id="subscription-form">
+            <input type="email" class="email-input" placeholder="ВАШ E-MAIL" required>
+            <button type="submit" class="subscribe-button">ПОДПИСАТЬСЯ</button>
+        </form>
+        <div class="privacy-note">
+            Нажимая на кнопку, вы даете согласие<br> на обработку персональных данных и соглашаетесь с политикой конфиденциальности
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('subscription-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.querySelector('.email-input').value;
+            
+            if (email) {
+                
+                alert('Спасибо за подписку!  Ваш email: ' + email);
+                document.querySelector('.email-input').value = ''; 
+            } else {
+                alert('Пожалуйста, введите корректный email.');
+            }
+        });
+    </script>
+</body>
+</html>
